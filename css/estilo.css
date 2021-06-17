@@ -1,0 +1,163 @@
+html {
+  background-image: url("../imagen/fondo.jpeg");
+
+}
+
+h2{
+  text-align: center;
+  font-family:courier;
+  color: #9D34FF;
+  font-size:200%;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    color:rgb(2, 1, 1);
+}
+
+ul {
+  margin-left: 2%;
+  text-align: justify;
+  margin-right: 4%;
+}
+
+.ulfooter{
+  text-align: center;
+  margin-left: 0%;
+}
+
+
+header{
+    grid-area: cabecera;
+    text-align: center;
+}
+
+#titulo {
+  top:5%;
+  left:7%;
+  width: 100%;
+  text-align: center;
+  font-size: 90px;
+  
+}
+
+#titulocorto {
+  top:5%;
+  left:7%;
+  width: 100%;
+  text-align: center;
+  font-size: 90px;
+  
+}
+
+section {
+  grid-area: contenido;
+  color: black;
+  font-size: 150%;
+  margin-left: 10px;
+}
+
+article {
+  margin-top: 30px;
+  background-color: #FED8FD;
+  padding: 1%;
+}
+
+
+#menu1  {
+    grid-area: menu1;
+    
+}
+
+#menu1 a {
+   background-color: #B7FAC9;
+  color: black;
+  display: block;
+  padding: 5%;
+  text-decoration: none;
+}
+
+#menu1 a:hover {
+  background-color: #ccc;
+}
+
+#menu1 a.active{
+background-color: #BCB7FA;
+  color: black;
+}
+
+#menu2 {
+    grid-area: menu2;    
+    font-size: 20px;
+    color: white;
+    font-family:courier;
+
+}
+
+#menu2 img {
+  width:px; 
+  height:29px;
+}
+
+
+
+footer{
+    grid-area: footer;
+    margin-top: 50px;
+    text-align: center;
+   color: black;
+   text-shadow: 2px 2px 5px green;
+  background-color: #ADFFFD;
+  font-size: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+   'cabecera cabecera cabecera cabecera cabecera cabecera'
+   'menu1 menu2 menu2 menu2 menu2 menu2'
+   'menu1 contenido contenido contenido contenido contenido'
+   'footer footer footer footer footer footer'
+  ;
+}
+
+main > * {
+ text-align: center;
+ 
+ font-size: 20px;
+}
+
+@media screen and (max-width: 1000px){
+
+   main {
+    display: grid;
+    grid-template-areas:
+   'cabecera cabecera cabecera cabecera cabecera cabecera'
+   'menu2 menu1 menu1 menu1 menu1 menu1'
+   'contenido contenido contenido contenido contenido contenido'
+   'footer footer footer footer footer footer'
+   ;
+ 
+ 
+}
+
+}
+
+@media screen and (max-width: 750px){
+
+   main {
+    display: grid;
+    grid-template-areas:
+   'cabecera cabecera cabecera cabecera cabecera cabecera'
+   'menu1 menu1 menu1 menu1 menu1 menu1'
+   'menu2 menu2 menu2 menu2 menu2 menu2'
+   'contenido contenido contenido contenido contenido contenido'
+   'footer footer footer footer footer footer'
+   ;
+
+ 
+}
+
+
+}
